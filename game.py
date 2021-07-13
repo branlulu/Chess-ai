@@ -1,6 +1,6 @@
 """
-This module contains the main interface/game of the program. Evaluates the AI's performance against
-other players and returns winning percentages.
+This module contains the script to evaluates the AI's performance against
+other AIs, random players and returns winning percentages.
 
 Functions:
 - simulate_game(depth, tree, random_player)

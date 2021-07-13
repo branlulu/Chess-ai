@@ -147,12 +147,15 @@ def minimax(depth, board, is_maximize, alpha, beta):
 
     return best_score
 
-def determine_move(depth, board, is_maximize):
+def determine_move(depth, board):
     """
     Given depth, current board, and current player, return the optimal move
     from minimax.
     """
-    if is_maximize:
+
+    is_maximize = (board.turn == 1)
+
+    if is_maximize: # White
         best_score = -float('inf')
     else:
         best_score = float('inf')
